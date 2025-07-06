@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucithorne | Infernal Boutique & Sigil Circle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: radial-gradient(circle at center, #1a1a1a, #000000);
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+    header, footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #110c0c;
+    }
+    h1, h2, h3 {
+      color: #e25822;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .category {
+      margin-bottom: 2rem;
+    }
+    .product {
+      display: inline-block;
+      background: #2b2b2b;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px #000;
+    }
+    .product h3 {
+      margin-top: 0;
+    }
+    .scroll-content {
+      display: none;
+      padding: 1rem;
+      background: #1a1a1a;
+      border: 1px solid #e25822;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+    }
+    .scroll-content.show {
+      display: block;
+    }
+    .buy-button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: linear-gradient(45deg, #d32f2f, #880e4f);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .tier {
+      margin: 1.5rem auto;
+      background: #1f1f1f;
+      border: 1px solid #e25822;
+      border-radius: 10px;
+      max-width: 400px;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛡️ Lucithorne | Infernal Boutique</h1>
+    <p>Tempt. Transcend. Transform.</p>
+  </header>
+
+  <section id="fire">
+    <h2>🔥 Fire Arsenal</h2>
+    <div class="category">
+      <div class="product">
+        <h3>Ember Blade</h3>
+        <p>25 DMG</p>
+        <div onclick="toggleScroll(this)" style="cursor:pointer;">📜 Lore Scroll</div>
+        <div class="scroll-content">Forged in the heart of Kael’s inferno, this blade burns eternally.</div>
+        <button class="buy-button">Buy with Sigil</button>
+      </div>
+      <div class="product">
+        <h3>Flame Whip</h3>
+        <p>40 DMG</p>
+        <div onclick="toggleScroll(this)" style="cursor:pointer;">📜 Lore Scroll</div>
+        <div class="scroll-content">Cinderlash, the whip that scorched the skies during the Red War.</div>
+        <button class="buy-button">Buy with Sigil</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="frost">
+    <h2>❄️ Frost Arsenal</h2>
+    <div class="category">
+      <div class="product">
+        <h3>Frost Dagger</h3>
+        <p>20 DMG</p>
+        <div onclick="toggleScroll(this)" style="cursor:pointer;">📜 Lore Scroll</div>
+        <div class="scroll-content">Forged in glacial silence, it freezes souls mid-strike.</div>
+        <button class="buy-button">Buy with Sigil</button>
+      </div>
+      <div class="product">
+        <h3>Glacial Aegis</h3>
+        <p>35 DMG</p>
+        <div onclick="toggleScroll(this)" style="cursor:pointer;">📜 Lore Scroll</div>
+        <div class="scroll-content">The unbreakable shield wielded by Lyra, queen of the Shivering Hollow.</div>
+        <button class="buy-button">Buy with Sigil</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="shadow">
+    <h2>🌑 Shadow Arsenal</h2>
+    <div class="category">
+      <div class="product">
+        <h3>Shadow Cloak</h3>
+        <p>15 DMG + Stealth</p>
+        <div onclick="toggleScroll(this)" style="cursor:pointer;">📜 Lore Scroll</div>
+        <div class="scroll-content">This cloak merges you with the Abyss; unseen, unheard, unstoppable.</div>
+        <button class="buy-button">Buy with Sigil</button>
+      </div>
+      <div class="product">
+        <h3>Umbral Blade</h3>
+        <p>30 DMG</p>
+        <div onclick="toggleScroll(this)" style="cursor:pointer;">📜 Lore Scroll</div>
+        <div class="scroll-content">Zane’s cursed blade — each strike drains both foe and soul.</div>
+        <button class="buy-button">Buy with Sigil</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sigilCircle">
+    <h2>🔮 Join the Sigil Circle</h2>
+    <p>Unlock monthly drops, early access, and VIP artifacts through your sacred tier.</p>
+    <div class="tier">
+      <h3>Circle I - Ember Initiate</h3>
+      <p>🔥 1 Weapon Drop / Month</p>
+    </div>
+    <div class="tier">
+      <h3>Circle II - Frostbound</h3>
+      <p>❄️ 2 Exclusive Drops + Early Access</p>
+    </div>
+    <div class="tier">
+      <h3>Circle III - Abyssborn</h3>
+      <p>🌑 All Drops + VIP Summons + QR Invite</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lucithorne. Tempt. Transcend. Transform.</p>
+  </footer>
+
+  <script>
+    function toggleScroll(el) {
+      const content = el.nextElementSibling;
+      content.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
