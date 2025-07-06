@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucithorne | Infernal Game Portal</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>🔥 Ascension Through the Abyss</h1>
+    <p>Lucithorne Game Launch Chamber</p>
+  </header>
+
+  <main class="container">
+    <button id="launchBtn">Begin Descent</button>
+
+    <section id="gameSection" style="display:none;">
+      <iframe src="https://itch.io/embed-upload/8004033?color=333333" width="800" height="600" frameborder="0"></iframe>
+
+      <div class="sigil-entry">
+        <h2>Enter Sigil Code</h2>
+        <input type="text" id="sigilInput" placeholder="e.g., ABYSS-FIRE-001" />
+        <button onclick="checkSigil()">Unlock</button>
+        <div id="sigilResult" class="result"></div>
+      </div>
+
+      <section class="boutique">
+        <h2>Infernal Boutique</h2>
+        <div class="scrolls">
+          <div class="scroll" onclick="showLore('fire')">🔥 Fire Scroll</div>
+          <div class="scroll" onclick="showLore('frost')">❄️ Frost Scroll</div>
+          <div class="scroll" onclick="showLore('shadow')">🌑 Shadow Scroll</div>
+        </div>
+        <div id="loreBox" class="lore-box"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lucithorne. Tempt. Transcend. Transform.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
